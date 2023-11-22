@@ -11,6 +11,7 @@ import MelhoriaGeralDaSaude from "./components/MelhoriaGeralDaSaude";
 import PrevencaoETratamentoDeDoencasNaoTransmissiveis from "./components/PrevencaoETratamentoDeDoencasNaoTransmissiveis";
 import ReducaoDaMortalidadeInfantil from "./components/ReducaoDaMortalidadeInfantil";
 import Menu from './components/Menu';
+import Footer from './components/Footer';
 
 //importar imagens
 //import nomedaimagem from "./../imagens/nomedaimagem.png
@@ -20,8 +21,10 @@ function App() {
 
     <BrowserRouter>
       <div id="container">
-        {/*chamando os arquivos da pasta components para o esqueleto da página*/}
+        
         <Menu/> {/*estou chamando o menu aqui fora do <Routes> pra ele ficar fixo na tela */}
+        
+        {/*chamando os arquivos da pasta components para o esqueleto da página*/}
         <Routes>
           <Route path='/'element={<Home/>}/>
           <Route path='/CombateADoencasTransmissiveis'element={<CombateADoencasTransmissiveis/>}/>
@@ -29,10 +32,13 @@ function App() {
           <Route path='/PrevencaoETratamentoDeDoencasNaoTransmissiveis'element={<PrevencaoETratamentoDeDoencasNaoTransmissiveis/>}/>
           <Route path='/ReducaoDaMortalidadeInfantil'element={<ReducaoDaMortalidadeInfantil/>}/>
         </Routes>
+        
+        <Footer/>
+      
       {/*<img src={nomedaimagem} alt='descrição da imagem' /> */}
       </div>
     </BrowserRouter>
-    
+
   );
 }
 
