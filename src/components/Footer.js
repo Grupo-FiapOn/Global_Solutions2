@@ -1,5 +1,3 @@
-//preciso importar um componente do routerDom
-import {Link} from 'react-router-dom'
 
 
 function Footer(){
