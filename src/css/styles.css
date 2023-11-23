@@ -102,6 +102,15 @@
     background-color: #e2e6ea;
  }
 
+.MelhoriaGeralDaSaude {
+   text-align: center;
+}
+
+.MelhoriaGeralDaSaude .imagem {
+    height: 25vh;
+
+}
+
 .Footer .titulo {
     font-size: 1em;
     background: #313131;
