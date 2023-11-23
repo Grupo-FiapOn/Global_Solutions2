@@ -22,9 +22,25 @@ function Home(){
 
 //para armazenar mais de um dado preenchido no formulário
     const [listaUsuario, setListaUsuario] = useState([])
-//a função para chamar essa lista
-    function inserirUsuario(usuario){
+
+//salvar os dados preenchidos no formulário em localStorage
+function salvarEmLocalStorage(dados) {
+    const dadosAntigos = JSON.parse(localStorage.getItem('dados')) || [];
+    const dadosAtualizados = [...dadosAntigos, dados];
+    localStorage.setItem('dados', JSON.stringify(dadosAtualizados));
+  }
+
+    //a função para chamar essa lista
+    function inserirUsuario(usuario, e){
         setListaUsuario([...listaUsuario, usuario])
+        salvarEmLocalStorage(usuario);
+
+        //Exibir alerta de sucesso ao enviar a mensagem
+        alert("Sua mensagem foi enviada com sucesso!");
+
+        //limpar formulario
+        e.target.reset();
+    
     }
     
     return(
@@ -54,19 +70,8 @@ function Home(){
                             <span>{errors.mensagem?.message}</span>
                         </label>
                         <button type="submit">Enviar</button>
-                       {/* alert("Sua mensagem foi enviada com sucesso!") 
-                       precisa armazenar esses dados num .json? api?*/}
                     </fieldset>
                 </form>
-                <div id="armazenarUsuario">
-                    {listaUsuario.map((usu,index)=>
-                        <div id="dados" key={index}>
-                            <p>Nome: {usu.nome}</p>
-                            <p>Email: {usu.email}</p>
-                            <p>Mensagem: {usu.mensagem}</p>
-                        </div>
-                    )}
-                </div>
             </div>
 
         </div>
