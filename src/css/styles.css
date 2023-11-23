@@ -1,5 +1,43 @@
 #container
 
+.doencas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.disease-box {
+    white-space: pre-line;
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    max-width: 600px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.disease-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+  
+.disease-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
 .Menu .menu {
     margin-bottom: 20px;
     background-color: #f8f9fa;
@@ -46,6 +84,10 @@
 .Menu .menu:hover .submenu {
     display: block;
  }
+
+.Menu .bold-link {
+    font-weight: bold;
+  }
 
 .Formulario {
     margin: 20px;
