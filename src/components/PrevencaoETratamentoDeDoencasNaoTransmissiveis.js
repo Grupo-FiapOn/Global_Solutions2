@@ -1,10 +1,10 @@
 //importar imagens:
 //import nomedaimagem from "./../imagens/nomedaimagem.png
-
+import '../css/styles.css'
 function PrevencaoETratamentoDeDoencasNaoTransmissiveis(){
 
     return(
-        <div id="PrevencaoETratamentoDeDoencasNaoTransmissiveis">
+        <div className="PrevencaoETratamentoDeDoencasNaoTransmissiveis">
             <h2>Prevenção E Tratamento De Doenças Não Transmissíveis</h2>
             <h3> Um Guia Rápido:</h3>
             <p>As doenças não transmissíveis são responsáveis por 72% das mortes no Brasil! 

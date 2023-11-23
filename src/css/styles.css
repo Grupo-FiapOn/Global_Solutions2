@@ -1,0 +1,137 @@
+#container
+
+.Menu .menu {
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+ }
+ 
+.Menu .title {
+    font-size: 1.5em;
+    color: #000;
+ }
+ 
+.Menu .lista {
+    display: flex;
+    list-style: none;
+    padding: 0;
+ }
+ 
+.Menu .link {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 1em;
+ }
+ 
+.Menu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 10px;
+    list-style: none;
+    z-index: 1;
+ }
+ 
+.Menu .menu:hover .submenu {
+    display: block;
+ }
+
+.Formulario {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+ }
+ 
+.Formulario fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+.Formulario legend {
+    font-size: 1.5em;
+    color: #000;
+    margin-bottom: 10px;
+ }
+ 
+.Formulario label {
+    display: block;
+    margin-bottom: 10px;
+ }
+ 
+.Formulario input {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    margin-top: 0.5rem;
+ }
+ 
+.Formulario button {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+    margin-top: 0.5rem;
+ }
+ 
+.Formulario button:hover {
+    background-color: #e2e6ea;
+ }
+
+.Footer .titulo {
+    font-size: 1em;
+    background: #313131;
+    color: white;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+  
+.Footer .lista {
+    list-style: none;
+    padding: 0;
+}
+  
+.Footer .integrante {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8em;
+    margin: 10px 0;
+    /* Adicionado espaçamento vertical */
+    justify-content: center;
+}
+  
+.Footer .ano {
+    font-size: 0.7em;
+}
+  
+.CombateADoencasTransmissiveis {
+    
+}

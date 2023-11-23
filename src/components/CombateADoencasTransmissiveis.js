@@ -1,10 +1,11 @@
 //importar imagens:
 //import nomedaimagem from "./../imagens/nomedaimagem.png
+import '../css/styles.css'
 
 function CombateADoencasTransmissiveis(){
 
     return(
-        <div id="CombateADoencasTransmissiveis">
+        <div className="CombateADoencasTransmissiveis">
             <h2>Combate A Doenças Transmissíveis</h2>
            
             <h3 className="AIDS">AIDS</h3>

@@ -1,10 +1,11 @@
 //importar imagens:
 //import nomedaimagem from "./../imagens/nomedaimagem.png
+import '../css/styles.css'
 
 function MelhoriaGeralDaSaude(){
 
     return(
-        <div id="MelhoriaGeralDaSaude">
+        <div className="MelhoriaGeralDaSaude">
             <h2>Melhoria Geral Da Saude</h2>
             <p>Conteúdo</p>
             {/*para inserir a imagem:

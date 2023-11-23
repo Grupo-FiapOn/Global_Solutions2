@@ -1,5 +1,6 @@
 //importar imagens:
 //import nomedaimagem from "./../imagens/nomedaimagem.png
+import '../css/styles.css'
 
 import { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -43,36 +44,9 @@ function salvarEmLocalStorage(dados) {
     
     }
     
-    // css pro formulario
-    const inputStyle = {
-        width: '100%',
-        padding: '0.375rem 0.75rem',
-        border: '1px solid #ced4da',
-        borderRadius: '0.25rem',
-        marginTop: '0.5rem',
-      };
-    
-      const buttonStyle = {
-        display: 'inline-block',
-        fontWeight: '400',
-        color: '#212529',
-        textAlign: 'center',
-        verticalAlign: 'middle',
-        userSelect: 'none',
-        backgroundColor: '#f8f9fa',
-        border: '1px solid #ced4da',
-        padding: '0.375rem 0.75rem',
-        fontSize: '1rem',
-        lineHeight: '1.5',
-        borderRadius: '0.25rem',
-        transition: 'color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out',
-        cursor: 'pointer',
-        marginTop: '0.5rem',
-      };
-
     return(
         <div>
-            <div id="Home">
+            <div className="Home">
                 <h2>Vídeo Pitch</h2>
                 <p>Conteúdo</p>
                 {/*para inserir a imagem:
@@ -80,34 +54,31 @@ function salvarEmLocalStorage(dados) {
                 obs: a imagem precisa estar dentro da pasta imagens*/}
             </div>
 
-            <div id="Formulario">
+            <div className="Formulario">
                 <form onSubmit={handleSubmit(inserirUsuario)}>
-                <fieldset>
+                    <fieldset>
                     <legend>Fale Conosco</legend>
-                    <label style={{ display: 'block' }}>
-                    Nome:
-                    <input type="text" style={inputStyle} {...register("nome")} />
-                    <span style={{ color: 'red' }}>{errors.nome?.message}</span>
+                    <label>
+                        Nome:
+                        <input type="text" {...register("nome")} />
+                        <span style={{ color: 'red' }}>{errors.nome?.message}</span>
                     </label>
-                    <label style={{ display: 'block' }}>
-                    E-mail:
-                    <input type="text" style={inputStyle} {...register("email")} />
-                    <span style={{ color: 'red' }}>{errors.email?.message}</span>
+                    <label>
+                        E-mail:
+                        <input type="text" {...register("email")} />
+                        <span style={{ color: 'red' }}>{errors.email?.message}</span>
                     </label>
-                    <label style={{ display: 'block' }}>
-                    Mensagem:
-                    <input type="text" style={inputStyle} {...register("mensagem")} />
-                    <span style={{ color: 'red' }}>{errors.mensagem?.message}</span>
+                    <label>
+                        Mensagem:
+                        <input type="text" {...register("mensagem")} />
+                        <span style={{ color: 'red' }}>{errors.mensagem?.message}</span>
                     </label>
-                    <button type="submit" style={buttonStyle}>Enviar</button>
-                </fieldset>
+                    <button type="submit">Enviar</button>
+                    </fieldset>
                 </form>
             </div>
-    
-
         </div>
-    )
-
+   );
 }
 
 export default Home

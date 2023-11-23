@@ -4,6 +4,9 @@
 //foi adicionado o <BrowserRouter>, <Routes>, <Route> na div na chamada dos arquivos pro esqueleto da pág
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
+//importando css
+import './css/styles.css'
+
 //importando os arquivos da pasta components
 import Home from "./components/Home";
 import CombateADoencasTransmissiveis from "./components/CombateADoencasTransmissiveis";
