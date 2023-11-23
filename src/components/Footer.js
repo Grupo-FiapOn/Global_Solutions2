@@ -1,5 +1,3 @@
-
-
 function Footer(){
 // Estilo CSS interno
 const titulo = {
