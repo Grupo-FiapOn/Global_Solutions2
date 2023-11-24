@@ -1,3 +1,8 @@
+ul li{
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
 .Menu .menu {
     margin-bottom: -20px;
     background-color: #f8f9fa;
@@ -51,6 +56,21 @@
 .Menu .bold-link {
     font-weight: bold;
   }
+
+.HomeVideoPitch{
+  margin-top: 20px;
+  height: 1300px;
+}
+
+.VideoPitch {
+    font-size: 3.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
 
 .textohome {
     margin-left: 270px;
@@ -351,13 +371,4 @@
   
 .Footer .ano { 
     font-size: 0.7em;
-}
-
-.VideoPitch {
-    font-size: 3.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
 }

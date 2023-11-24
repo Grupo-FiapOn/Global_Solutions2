@@ -1,5 +1,4 @@
 import React from 'react'
-import YouTube from 'react-youtube'
 import '../css/styles.css'
 
 import { useState } from "react"
@@ -43,23 +42,13 @@ function salvarEmLocalStorage(dados) {
         e.target.reset();
     
     }
-    
-    const videoOptions = {
-        height: '390',
-        width: '640',
-        playerVars: {
-          autoplay: 1,
-        },
-      };
-    
-      const videoId = 'https://www.youtube.com/watch?v=pUCe_F2XUdw'; // Replace with your actual YouTube video ID
-    
 
     return(
         <div>
+            <div className='HomeVideoPitch'>
             <div className="VideoPitch">
                 <div className="VideoPitch">Vídeo Pitch</div>
-                <YouTube videoId={videoId} opts={videoOptions} />
+                <iframe width="750" height="415" src="https://www.youtube.com/embed/LneUic06nEc?si=XrTd-lq1tVZMIOFn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
             <div className='textohome'>
@@ -73,7 +62,7 @@ function salvarEmLocalStorage(dados) {
                  a adesão a hábitos saudáveis. "Sua Saúde Postural" emerge como uma solução inovadora, alinhando o mundo digital ao 
                  bem-estar físico em um estilo de vida equilibrado.</p>
             </div>
-
+            </div>
             <div className="Formulario">
                 <form onSubmit={handleSubmit(inserirUsuario)}>
                     <fieldset>
