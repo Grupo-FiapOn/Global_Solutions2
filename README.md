@@ -21,21 +21,23 @@ Certifique-se de ter o Node.js e o npm instalados no seu sistema.
 
 ### Clonando o Repositório
 
-<```bash
+```bash
 git clone https://github.com/seu-usuario/sua-saude-postural.git
-cd sua-saude-postural>
+cd sua-saude-postural
+```
 
 ### Instalando Dependências
 
-<```bash
-npm install>
-
+```bash
+npm install
+```
 
 ### Executando o Projeto
 Após instalar as dependências, você pode iniciar o projeto com o seguinte comando:
 
-<```bash
-npm start>
+```bash
+npm start
+```
 
 Isso iniciará o aplicativo em modo de desenvolvimento. Abra http://localhost:3000 no seu navegador para visualizar o aplicativo.
 
