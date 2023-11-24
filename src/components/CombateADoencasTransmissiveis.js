@@ -16,7 +16,7 @@ function CombateADoencasTransmissiveis() {
         'Tratamento: Não há cura, mas a reprodução do vírus é controlada com medicamentos, que permitem que a pessoa ' +
         'tenha uma vida saudável.\n\n' +
         'Números atuais: 39 MM de pessoas vivem com HIV.',
-        image: 'aids.jpeg', // Substitua pelo caminho real da imagem
+        image: '../imagens/aids_1.png', // Substitua pelo caminho real da imagem
       },
       {
         title: 'Tuberculose',
