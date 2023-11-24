@@ -4,15 +4,6 @@ import '../css/styles.css'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-//importar imagens:
-//import nomedaimagem from "./../imagens/nomedaimagem.png
-import saudeDistancia from '../imagens/saude-distancia.jpeg';
-import saudeMovel from '../imagens/saude-movel.jpeg';
-import ia from '../imagens/ia.avif';
-import robotica from '../imagens/robotica.png';
-import iot from '../imagens/iot.png';
-import blockchain from '../imagens/Blockchain.jpg';
-
 
 function MelhoriaGeralDaSaude() {
     // Configurações do Slider
@@ -43,7 +34,7 @@ function MelhoriaGeralDaSaude() {
                         Essas inovações estão transformando a prestação de cuidados, tornando-a mais acessível, 
                         eficiente e conveniente globalmente, melhorando a qualidade e a disponibilidade dos serviços de saúde.</p>
                         
-                    <img className="imagem" src={saudeDistancia} alt="Saúde à Distância" />
+                    <img className="imagem" src='/img/saude-distancia.jpeg' alt="Saúde à Distância" />
                 </div>
                 
                 <div>
@@ -57,7 +48,7 @@ function MelhoriaGeralDaSaude() {
                         simples até dispositivos avançados, a m-health utiliza tecnologias como IA e IoT para ampliar suas aplicações,
                         melhorando a assistência médica, aumentando a acessibilidade aos serviços de saúde e capacitando as pessoas a cuidarem melhor da saúde cotidiana.</p>
                     
-                    <img className="imagem" src={saudeMovel} alt="Saúde integrada a dispositivos móveis" />
+                    <img className="imagem" src='img/saude-movel.jpeg' alt="Saúde integrada a dispositivos móveis" />
                 </div>  
                 <div> 
                     <h3 className="ia">IA no Diagnóstico</h3>            
@@ -68,7 +59,7 @@ function MelhoriaGeralDaSaude() {
                         supervisão para garantir sua precisão. Em resumo, a IA revoluciona o diagnóstico, aprimorando a eficiência e qualidade 
                         dos cuidados médicos com diagnósticos mais precoces e precisos.</p>
 
-                    <img className="imagem" src={ia} alt="Inteligência Artificial (IA) está transformando o diagnóstico médico"/>
+                    <img className="imagem" src='img/ia.avif' alt="Inteligência Artificial (IA) está transformando o diagnóstico médico"/>
                 </div>
                 <div>
                     <h3 className="robotica">Robótica na Medicina</h3>
@@ -79,7 +70,7 @@ function MelhoriaGeralDaSaude() {
                         ainda depende da habilidade do cirurgião e treinamento adequado para operar os sistemas com segurança e excelência. Em suma, a robótica cirúrgica representa 
                         um avanço significativo, melhorando resultados e técnicas na prática cirúrgica atual.</p>
                     
-                    <img className="imagem" src={robotica} alt="Robótica aplicada em cirurgias" />
+                    <img className="imagem" src='img/robotica.png' alt="Robótica aplicada em cirurgias" />
                 </div>
                 <div>
                     <h3 className="iot">IoT no Monitoramento Remoto</h3>
@@ -89,7 +80,7 @@ function MelhoriaGeralDaSaude() {
                         Os profissionais de saúde têm acesso a informações em tempo real, permitindo decisões mais ágeis, porém é crucial garantir a segurança e 
                         privacidade dos dados dos pacientes para sua implementação eficaz</p>
                     
-                    <img className="imagem" src={iot} alt="A Internet das Coisas (IoT) na saúde" />
+                    <img className="imagem" src='img/iot.png' alt="A Internet das Coisas (IoT) na saúde" />
                 </div>
                 <div>
                     <h3 className="blockchain">Blockchain na Saúde</h3>
@@ -101,7 +92,7 @@ function MelhoriaGeralDaSaude() {
                         visualizem informações específicas, fortalecendo assim a confidencialidade dos registros médicos. Dessa maneira, a tecnologia blockchain está desempenhando 
                         um papel fundamental na proteção dos dados sensíveis dos pacientes, promovendo uma gestão mais segura e transparente no setor da saúde.</p>
                     
-                    <img className="imagem" src={blockchain} alt="tecnologia blockchain" />
+                    <img className="imagem" src='img/blockchain.jpg' alt="tecnologia blockchain" />
                 </div>
             </Slider>
         </div>
