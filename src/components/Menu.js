@@ -3,7 +3,6 @@ import '../css/styles.css'
 import {Link, NavLink, useLocation} from 'react-router-dom';
 import React, {useState, useEffect} from 'react';
 
-
 function Menu(){
     const [collapsed, setCollapsed] = useState(true);
     const [activeLink, setActiveLink] = useState('/'); //aqui estou iniciando com o link padrao '/'
@@ -22,7 +21,7 @@ function Menu(){
     return (
         <div className="Menu">
           <nav className="menu">
-            <div className="title">Sua Saúde Postural</div>
+            <div className="title">Saúde para o Mundo</div>
             <ul className="lista">
               <li>
                 <NavLink className={`link ${activeLink === '/' ? 'bold-link' : ''}`} to="/" 

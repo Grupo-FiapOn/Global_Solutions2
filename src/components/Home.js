@@ -2,8 +2,8 @@
 //import nomedaimagem from "./../imagens/nomedaimagem.png
 import '../css/styles.css'
 
-import { useState } from "react";
-import { useForm } from "react-hook-form";
+import { useState } from "react"
+import { useForm } from "react-hook-form"
 import {yupResolver} from "@hookform/resolvers/yup"
 import * as yup from "yup"
 
@@ -46,12 +46,8 @@ function salvarEmLocalStorage(dados) {
     
     return(
         <div>
-            <div className="Home">
-                <h2>Vídeo Pitch</h2>
-                <p>Conteúdo</p>
-                {/*para inserir a imagem:
-                <img src={nomedaimagem} alt='descrição da imagem' /> 
-                obs: a imagem precisa estar dentro da pasta imagens*/}
+            <div className="VideoPitch">
+                <div className="VideoPitch">Vídeo Pitch</div>
             </div>
 
             <div className="Formulario">
