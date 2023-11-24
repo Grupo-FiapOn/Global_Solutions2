@@ -11,7 +11,7 @@ function Footer(){
           <li className="integrante">Danilo Yoshihara RM 98736</li>
           <li className="integrante">Larissa Torres RM 99298 </li>
           <li className="integrante">Lucas Duda RM 99442 </li>
-          <li className="integrante">Matheus Zornig RM 99442</li>
+          <li className="integrante">Matheus Zornig RM 551845</li>
         </ul>
 
         <p className="ano">@2023</p>
