@@ -15,6 +15,7 @@ function Footer(){
         </ul>
 
         <p className="ano">@2023</p>
+        <p className="gs">Global Solution - Segundo Semestre</p>
       </nav>
     </div>
   );

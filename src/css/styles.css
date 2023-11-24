@@ -3,298 +3,300 @@ ul li{
   margin-top: 10px;
 }
 
+/*-----------------------------MENU--------------------------------*/
 .Menu .menu {
-    margin-bottom: -20px;
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
-    border-radius: 4px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    vertical-align: middle;
-    justify-items: center;
- }
+  margin-bottom: -20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+  justify-items: center;
+}
  
 .Menu .title {
-    font-size: 1.2em;
-    color: #000;
- }
+  font-size: 1.2em;
+  color: #000;
+}
 
 .Menu .lista {
-    display: flex;
-    list-style: none;
-    text-align: center;
-    vertical-align: middle;
-    padding: 0;
- }
+  display: flex;
+  list-style: none;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+}
  
 .Menu .link {
-    margin-right: 10px;
-    text-decoration: none;
-    color: #000;
-    font-size: 1em;
- }
+  margin-right: 10px;
+  text-decoration: none;
+  color: #000;
+  font-size: 1em;
+}
  
 .Menu .submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
-    border-radius: 4px;
-    padding: 10px;
-    list-style: none;
-    z-index: 1;
- }
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 10px;
+  list-style: none;
+  z-index: 1;
+}
  
 .Menu .menu:hover .submenu {
-    display: block;
- }
+  display: block;
+}
 
 .Menu .bold-link {
-    font-weight: bold;
-  }
+  font-weight: bold;
+}
 
 .HomeVideoPitch{
   margin-top: 20px;
-  height: 1300px;
+  height: auto;
 }
 
+/*-----------------------------HOME------------------------------------*/
 .VideoPitch {
-    font-size: 3.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+  font-size: 3.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
-
 
 .textohome {
-    margin-left: 270px;
-    margin-right: 270px;
-    margin-top: 20px;
-    margin-bottom: 60px;
-    line-height: 3em;
-    text-align: justify;
+  margin-left: 270px;
+  margin-right: 270px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 3em;
+  text-align: justify;
   }
 
 .Formulario {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #dee2e6;
-    border-radius: 4px;
-    background-color: #f8f9fa;
-   /* max-width: 1000px; /* a largura máxima para o form */
-   /* margin-left: auto; /* Center the form on the page */
-    /*margin-right: auto;*/
+  margin: 100px;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  max-width: 600px; /* a largura máxima para o form */
+  margin-left: auto; /* Center the form on the page */
+  margin-right: auto;
  }
  
 .Formulario fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
  }
  
 .Formulario legend {
-    font-size: 1.5em;
-    color: #000;
-    margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #000;
+  margin-bottom: 10px;
  }
  
 .Formulario label {
-    display: block;
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
  }
  
-.Formulario input {
-    width: 100%;
-    padding: 0.375rem 0.75rem;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    margin-top: 0.5rem;
+.Formulario input, textarea {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  margin-top: 0.5rem;
  }
 
- .Formulario textarea {
+.Formulario textarea {
   resize: vertical; /* Allow vertical resizing of the textarea */
 }
  
 .Formulario button {
-    display: inline-block;
-    font-weight: 400;
-    color: #212529;
-    text-align: center;
-    vertical-align: middle;
-    user-select: none;
-    background-color: #f8f9fa;
-    border: 1px solid #ced4da;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    cursor: pointer;
-    margin-top: 0.5rem;
-    margin-left: auto; /* Center the button within the form */
-    margin-right: auto;
-    display: block; 
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  user-select: none;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-left: auto; /* centraliza o button */
+  margin-right: auto;
+  display: block; 
  }
  
 .Formulario button:hover {
-    background-color: #e2e6ea;
+  background-color: #e2e6ea;
  }
 
+/*----------------------COMBATE A DOENÇAS TRANSMISSIVEIS------------------------*/
 .disease-box {
-    white-space: pre-line;
-    background-size: cover;
-    background-position: center top;
-    width: 100vw;
-    height: 100vh;
-    padding: 20px;
-    color: black;
-    text-align: center;
-    position: relative;
-    /*opacity: 0.3;*/
+  white-space: pre-line;
+  background-size: cover;
+  background-position: center top;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  position: relative;
 }
 
 .disease-image{
-    white-space: pre-line;
-    background-size: cover;
-    background-position: center top;
-    width: 100vw;
-    height: 100vh;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    /*opacity: 0.3;*/
+  white-space: pre-line;
+  background-size: cover;
+  background-position: center top;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+  position: relative;
 }
 
 .overlay {
     /*background-color: rgba(0, 0, 0, 0.5); /* Ajusta a transparência para 50% */
-    border-radius: 20px;
-    padding: 20px;
-    position: absolute;
-    top: 5%; /* Ajusta a distância do topo */
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    text-align: center;
-    max-width: 80%; /* Ajusta a largura máxima do conteúdo */
-    margin: auto; /* Centraliza horizontalmente */
+  border-radius: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 5%; /* Ajusta a distância do topo */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  max-width: 80%; /* Ajusta a largura máxima do conteúdo */
+  margin: auto; /* Centraliza horizontalmente */
 }
 
 .disease-navigation {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    width: 100%;
-    position: absolute;
-    bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
 }
 
 .disease-icon {
-    width: 60px; /* Ajusta a largura dos ícones */
-    height: 60px; /* Ajusta a altura dos ícones */
-    cursor: pointer;
-    z-index: 2;
+  width: 60px; /* Ajusta a largura dos ícones */
+  height: 60px; /* Ajusta a altura dos ícones */
+  cursor: pointer;
+  z-index: 2;
 }
 
-
+/*--------------------MELHORIA GERAL DA SAUDE------------------------*/
 .MelhoriaGeralDaSaude {
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    line-height: 3em;   
-    text-align: center;
-  }
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 3em;   
+  text-align: center;
+}
 
-  .MelhoriaGeralDaSaude .slick-slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+.MelhoriaGeralDaSaude .slick-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
   
-  .MelhoriaGeralDaSaude h3 {
-    margin-top: 20px;
-    margin-bottom: 10px; /* Ajuste conforme necessário */
-  }
+.MelhoriaGeralDaSaude h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 
-  .MelhoriaGeralDaSaude .slick-slide img {
-    max-width: 100%;
-    max-height: 100%;
-     width: auto;
-     height: 25vh;
-    margin: 0 auto;
-  }
+.MelhoriaGeralDaSaude .slick-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: 25vh;
+  margin: 0 auto;
+}
 
-  .MelhoriaGeralDaSaude .slick-dots{
+.MelhoriaGeralDaSaude .slick-dots{
   bottom: -35px;
-  }
+}
 
-  .MelhoriaGeralDaSaude .slick-dots li button::before {
-    font-size: 16px; 
-  }
+.MelhoriaGeralDaSaude .slick-dots li button::before {
+  font-size: 16px; 
+}
 
+/*------------------PREVENÇAO E TRATAMENTO DE DOENÇAS NAO TRANSMISSIVEIS------------------------*/
 .prevencao-container{
-    text-align: center;
-    background: url('/public/img/prevencaodoenca.jpg') center center / cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0;
+  text-align: center;
+  background: url('/public/img/prevencaodoenca.jpg') center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
 }
 
 .prevencao-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .prevencao-categories-container {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-  
-  .prevencao-category {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    width: 40%; 
-    height: 70%;
-    margin-top: 30px;
-    margin-bottom: 50px;
-  }
-
-  .prevencao-icons button img {
-    width: 20px; /* Ajuste o valor conforme necessário */
-    height: 20px; /* Ajuste o valor conforme necessário */
-  }
-
-  .prevencao-category ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  .prevencao-box h3 {
-    margin-top: 20px;
-    margin-bottom: 40px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin-top: 20px;
 }
-  .prevencao-box p, h3, h5 {
-    margin-left: 270px;
-    margin-right: 270px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    line-height: 3em;
+  
+.prevencao-categories-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+  
+.prevencao-category {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 40%; 
+  height: 70%;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
+.prevencao-icons button img {
+  width: 20px; 
+  height: 20px; 
+}
+
+.prevencao-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.prevencao-box h3 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.prevencao-box p, h3, h5 {
+  margin-left: 270px;
+  margin-right: 270px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 3em;
+}
+
+/*------------------REDUÇAO DA MORTALIDADE INFANTIL------------------------*/
 .ReducaoDaMortalidadeInfantil {
   text-align: center;
   margin-left: 200px;
@@ -331,44 +333,36 @@ ul li{
   font-size: 16px; 
 }
 
-
-/* .Footer {
-    
-    
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    align-items:baseline;
-    justify-content: center;
-} */
+/*-----------------------------FOOTER--------------------------------*/
 .Footer .titulo {
-    position: absolute;
-    display:flex;
-    font-size: 1em;
-    background: #313131;
-    color: white;
-    width: 100%;
-    margin-top: 0.2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+  display:flex;
+  font-size: 1em;
+  background: #313131;
+  color: white;
+  width: 100%;
+  margin-top: 0.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
   
 .Footer .lista {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
   
 .Footer .integrante {
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.8em;
-    margin: 10px 0;
-    justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8em;
+  margin: 10px 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
   
-.Footer .ano { 
-    font-size: 0.7em;
+.Footer .ano, .gs { 
+  font-size: 0.7em;
 }

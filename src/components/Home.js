@@ -79,7 +79,7 @@ function salvarEmLocalStorage(dados) {
                     </label>
                     <label>
                         Mensagem:
-                        <input type="text" {...register("mensagem")} />
+                        <textarea rows="5" {...register("mensagem")} />
                         <span style={{ color: 'red' }}>{errors.mensagem?.message}</span>
                     </label>
                     <button type="submit">Enviar</button>
