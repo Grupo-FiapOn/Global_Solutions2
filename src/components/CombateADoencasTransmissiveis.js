@@ -26,7 +26,7 @@ function CombateADoencasTransmissiveis() {
         'adequadamente os itens usados para cobrir ou se limpar ao tossir e espirrar.\n\n' +
         'Tratamento: Diagnóstico tempestivo e ministração de medicamentos para combater o parasita.\n\n' +
         'Números atuais: 10.6 MM de pessoas adoeceram por tuberculose em 2022.',
-        image: 'tuberculose.jpg', // Substitua pelo caminho real da imagem
+        image: '../imagens/tuberculose_1.png', // Substitua pelo caminho real da imagem
       },
       {
         title: 'Doença Tropical',
