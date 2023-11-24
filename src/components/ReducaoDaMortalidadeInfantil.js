@@ -23,6 +23,10 @@ function ReducaoDaMortalidadeInfantil(){
             
             <Slider {...settings}>
                     <div>
+                        <h3>Taxa de Mortalidade Infantil no Brasil</h3>
+                        <img className="imagem" src={process.env.PUBLIC_URL + '/img/mortalidadeinfantil.png'} alt="Gráfico de Mortalidade Infantil" />
+                     </div>
+                     <div>
                         <h3>Dados</h3>
                         <p> Segundo dados da Organização Mundial da Saúde (OMS), em 2019, a taxa global de mortalidade infantil era de aproximadamente 38 mortes por 1.000 nascidos vivos.</p>
                         <p>As principais causas de morte em crianças menores de 5 anos são: complicações de parto prematuro, asfixia/trauma durante o parto, pneumonia, diarreia e malária, todas as quais podem ser prevenidas ou tratadas com acesso a intervenções acessíveis em saúde e saneamento.</p>
