@@ -58,7 +58,7 @@ function PrevencaoETratamentoDeDoencasNaoTransmissiveis() {
     return (
       <div className="prevencao-container">
         <div className="prevencao-box">
-          <h2>Prevenção e Tratamento de Doenças Não Transmissíveis</h2>
+         
           <h3>Um Guia Rápido:</h3>
           <p>
             As doenças não transmissíveis são responsáveis por 72% das mortes no Brasil! Os impactos

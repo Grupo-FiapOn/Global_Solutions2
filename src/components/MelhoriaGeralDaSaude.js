@@ -28,7 +28,7 @@ function MelhoriaGeralDaSaude() {
 
     return(
         <div className="MelhoriaGeralDaSaude">
-            <h2>Melhoria Geral Da Saude</h2>
+           
             <Slider {...settings}>
                 <div>
                     <h3 className="saude_a_distancia">Saúde a Distância</h3>

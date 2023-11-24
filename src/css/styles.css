@@ -1,5 +1,5 @@
 .Menu .menu {
-    margin-bottom: 20px;
+    margin-bottom: -20px;
     background-color: #f8f9fa;
     border: 1px solid #dee2e6;
     border-radius: 4px;
@@ -15,7 +15,7 @@
     font-size: 1.2em;
     color: #000;
  }
- 
+
 .Menu .lista {
     display: flex;
     list-style: none;
@@ -52,12 +52,24 @@
     font-weight: bold;
   }
 
+.textohome {
+    margin-left: 270px;
+    margin-right: 270px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    line-height: 3em;
+    text-align: justify;
+  }
+
 .Formulario {
     margin: 20px;
     padding: 20px;
     border: 1px solid #dee2e6;
     border-radius: 4px;
     background-color: #f8f9fa;
+   /* max-width: 1000px; /* a largura máxima para o form */
+   /* margin-left: auto; /* Center the form on the page */
+    /*margin-right: auto;*/
  }
  
 .Formulario fieldset {
@@ -84,6 +96,10 @@
     border-radius: 0.25rem;
     margin-top: 0.5rem;
  }
+
+ .Formulario textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
  
 .Formulario button {
     display: inline-block;
@@ -101,8 +117,9 @@
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     cursor: pointer;
     margin-top: 0.5rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: auto; /* Center the button within the form */
+    margin-right: auto;
+    display: block; 
  }
  
 .Formulario button:hover {
@@ -183,7 +200,7 @@
   }
   
   .MelhoriaGeralDaSaude h3 {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 10px; /* Ajuste conforme necessário */
   }
 
@@ -193,6 +210,10 @@
      width: auto;
      height: 25vh;
     margin: 0 auto;
+  }
+
+  .MelhoriaGeralDaSaude .slick-dots{
+  bottom: -35px;
   }
 
   .MelhoriaGeralDaSaude .slick-dots li button::before {
@@ -205,7 +226,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 0;
 }
 
 .prevencao-container {
@@ -243,7 +264,7 @@
   }
 
   .prevencao-box h3 {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
   .prevencao-box p, h3, h5 {
@@ -254,10 +275,41 @@
     line-height: 3em;
 }
 
-.ReducaoDaMortalidadeInfantil{
-    text-align: center;
+.ReducaoDaMortalidadeInfantil {
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 2em;
 }
 
+.ReducaoDaMortalidadeInfantil h2 {
+  margin-bottom: 20px;
+}
+
+.ReducaoDaMortalidadeInfantil h3 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.ReducaoDaMortalidadeInfantil p {
+  margin-bottom: 15px;
+}
+
+.ReducaoDaMortalidadeInfantil ul {
+  margin-bottom: 15px;
+  list-style-type: none;
+  padding: 0;
+}
+.ReducaoDaMortalidadeInfantil img {
+  width: 100%; /* Make the image responsive within its container */
+  margin-bottom: 15px;
+}
+
+.ReducaoDaMortalidadeInfantil .slick-dots li button::before {
+  font-size: 16px; 
+}
 
 
 /* .Footer {
