@@ -47,6 +47,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    vertical-align: middle;
     justify-items: center;
  }
  
@@ -58,6 +59,8 @@
 .Menu .lista {
     display: flex;
     list-style: none;
+    text-align: center;
+    vertical-align: middle;
     padding: 0;
  }
  
@@ -152,12 +155,23 @@
     height: 25vh;
 
 }
-
+/* .Footer {
+    
+    
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    align-items:baseline;
+    justify-content: center;
+} */
 .Footer .titulo {
+    position: absolute;
+    display:flex;
     font-size: 1em;
     background: #313131;
     color: white;
-    height: 50vh;
+    width: 100%;
+    margin-top: 5em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,12 +189,20 @@
     color: #fff;
     font-size: 0.8em;
     margin: 10px 0;
-    /* Adicionado espaçamento vertical */
     justify-content: center;
 }
   
-.Footer .ano {
+.Footer .ano { 
     font-size: 0.7em;
+}
+
+.VideoPitch {
+    font-size: 3.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
   
 .CombateADoencasTransmissiveis {

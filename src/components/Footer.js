@@ -5,14 +5,13 @@ function Footer(){
     return (
     <div className="Footer">
       <nav className="titulo">
-        <p>Sua Saúde Postural</p>
-
-        <ul className="lista">
+          <p>Saúde para o Mundo</p>
+          <ul className="lista">
           <li className="integrante">Alessandra Vaiano RM 551497</li>
-          <li className="integrante">Danilo</li>
-          <li className="integrante">Larissa</li>
-          <li className="integrante">Lucas</li>
-          <li className="integrante">Matheus</li>
+          <li className="integrante">Danilo Yoshihara RM 98736</li>
+          <li className="integrante">Larissa Torres RM 99298 </li>
+          <li className="integrante">Lucas Duda RM 99442 </li>
+          <li className="integrante">Matheus Zornig RM 99442</li>
         </ul>
 
         <p className="ano">@2023</p>

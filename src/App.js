@@ -21,7 +21,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-
+   
     <BrowserRouter>
       <div id="container">
         
@@ -36,10 +36,8 @@ function App() {
           <Route path='/ReducaoDaMortalidadeInfantil'element={<ReducaoDaMortalidadeInfantil/>}/>
         </Routes>
         
-        <Footer/>
-      
-      {/*<img src={nomedaimagem} alt='descrição da imagem' /> */}
       </div>
+    <Footer/> {}
     </BrowserRouter>
 
   );
