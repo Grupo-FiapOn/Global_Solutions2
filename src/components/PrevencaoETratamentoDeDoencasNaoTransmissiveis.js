@@ -1,49 +1,112 @@
-//importar imagens:
-//import nomedaimagem from "./../imagens/nomedaimagem.png
-import '../css/styles.css'
-function PrevencaoETratamentoDeDoencasNaoTransmissiveis(){
+import React, { useState } from 'react';
+import '../css/styles.css';
 
-    return(
-        <div className="PrevencaoETratamentoDeDoencasNaoTransmissiveis">
-            <h2>Prevenção E Tratamento De Doenças Não Transmissíveis</h2>
-            <h3> Um Guia Rápido:</h3>
-            <p>As doenças não transmissíveis são responsáveis por 72% das mortes no Brasil! 
-            Os impactos negativos na saúde física, mental e na rotina alimentar aumentam esses riscos.</p>
+function PrevencaoETratamentoDeDoencasNaoTransmissiveis() {
+  const PrevencaoTratamento = () => {
+    const [currentItemAtividade, setCurrentItemAtividade] = useState(0);
+    const [currentItemAlimentacao, setCurrentItemAlimentacao] = useState(0);
 
-            <p>O tabagismo, consumo excessivo de álcool, dietas inadequadas e falta de atividade física 
-            representam 51% das mortes por doenças crônicas.</p>
+    const categories = {
+      atividadeFisica: {
+        title: 'A Atividade Física Previne',
+        list: [
+          '52% da hipertensão arterial',
+          '48% das doenças cardiovasculares',
+          '16% do câncer de cólon',
+          '14% do diabetes',
+          '10% do câncer de mama',
+        ],
+      },
+      alimentacao: {
+        title: 'Uma Alimentação Balanceada Previne',
+        list: [
+          '61% do diabetes tipo 2',
+          '34% do câncer de endometriose',
+          '30% das doenças da vesícula biliar',
+          '24% da osteoartrose',
+          '17% das doenças cardiovasculares',
+          '17% da hipertensão arterial',
+          '11% do câncer de intestino',
+          '11% do câncer de mama',
+        ],
+      },
+    };
 
-            <h5>O Controle dessas doenças depende de hábitos e ações que melhoram a qualidade de vida</h5> 
+    const nextItem = (category) => {
+      if (category === 'atividadeFisica') {
+        setCurrentItemAtividade((prevItem) => (prevItem + 1) % categories['atividadeFisica'].list.length);
+      } else {
+        setCurrentItemAlimentacao((prevItem) => (prevItem + 1) % categories['alimentacao'].list.length);
+      }
+    };
 
-           <p> 
-            <h4>Importância da Alimentação e Atividade Física</h4>
+    const prevItem = (category) => {
+      if (category === 'atividadeFisica') {
+        setCurrentItemAtividade(
+          (prevItem) =>
+            (prevItem - 1 + categories['atividadeFisica'].list.length) %
+            categories['atividadeFisica'].list.length
+        );
+      } else {
+        setCurrentItemAlimentacao(
+          (prevItem) =>
+            (prevItem - 1 + categories['alimentacao'].list.length) % categories['alimentacao'].list.length
+        );
+      }
+    };
 
-            <ul>A Atividade Física previne:
-                <li> 52% da hipertensão arterial</li>
-                <li> 48% das doenças cardiovasculares</li>
-                <li> 16% do câncer de cólon</li>
-                <li> 14% do diabetes</li>
-                <li> 10% do câncer de mama</li>
-            </ul>
-            <ul>Uma Alimentação Balanceada previne:
-                <li> 61% do diabetes tipo 2</li>
-                <li> 34% do câncer de endometriose</li>
-                <li> 30% das doenças da vesícula biliar</li>
-                <li> 24% da osteoartrose</li>
-                <li> 17% das doenças cardiovasculares</li>
-                <li> 17% da hipertensão arterial</li>
-                <li> 11% do câncer de intestino</li>
-                <li> 11% do câncer de mama</li>
-            </ul>
-            </p>
-            {/*para inserir a imagem:
-            <img src={nomedaimagem} alt='descrição da imagem' /> 
-            obs: a imagem precisa estar dentro da pasta imagens*/}
+    return (
+      <div className="prevencao-container">
+        <div className="prevencao-box">
+          <h2>Prevenção e Tratamento de Doenças Não Transmissíveis</h2>
+          <h3>Um Guia Rápido:</h3>
+          <p>
+            As doenças não transmissíveis são responsáveis por 72% das mortes no Brasil! Os impactos
+            negativos na saúde física, mental e na rotina alimentar aumentam esses riscos.
+          </p>
+          <p>
+            O tabagismo, consumo excessivo de álcool, dietas inadequadas e falta de atividade física
+            representam 51% das mortes por doenças crônicas.
+          </p>
+          <h5>O Controle dessas doenças depende de hábitos e ações que melhoram a qualidade de vida</h5>
         </div>
-    )
 
+        <div className="prevencao-categories-container">
+          <div className="prevencao-category">
+            <h4>{categories['atividadeFisica'].title}</h4>
+            <ul>
+              <li>{categories['atividadeFisica'].list[currentItemAtividade]}</li>
+            </ul>
+            <div className="prevencao-icons">
+              <button onClick={() => prevItem('atividadeFisica')}>
+                <img src={`${process.env.PUBLIC_URL}img/setaesq.png`} alt="Ícone Anterior" />
+              </button>
+              <button onClick={() => nextItem('atividadeFisica')}>
+                <img src={`${process.env.PUBLIC_URL}img/setadir.png`} alt="Ícone Próximo" />
+              </button>
+            </div>
+          </div>
+
+          <div className="prevencao-category">
+            <h4>{categories['alimentacao'].title}</h4>
+            <ul>
+              <li>{categories['alimentacao'].list[currentItemAlimentacao]}</li>
+            </ul>
+            <div className="prevencao-icons">
+              <button onClick={() => prevItem('alimentacao')}>
+                <img src={`${process.env.PUBLIC_URL}img/setaesq.png`} alt="Ícone Anterior" />
+              </button>
+              <button onClick={() => nextItem('alimentacao')}>
+                <img src={`${process.env.PUBLIC_URL}img/setadir.png`} alt="Ícone Próximo" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  return <PrevencaoTratamento />;
 }
 
-export default PrevencaoETratamentoDeDoencasNaoTransmissiveis
-
-//para inserir no App.js eu jogo lá 1) import 2) Dentro do return(<nomedoarquivo/>)
+export default PrevencaoETratamentoDeDoencasNaoTransmissiveis;

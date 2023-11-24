@@ -17,7 +17,7 @@ function CombateADoencasTransmissiveis() {
         'Tratamento: Não há cura, mas a reprodução do vírus é controlada com medicamentos, que permitem que \n\n'+
         'a pessoa tenha uma vida saudável.\n\n' +
         'Números atuais: 39 MM de pessoas vivem com HIV.',
-        image: 'img/aids_1.png', // caminho da imagem
+        image: 'img/aids_1.jpg', // caminho da imagem
         icon: 'img/aids.png', // caminho do ícone
       },
       {
@@ -29,7 +29,7 @@ function CombateADoencasTransmissiveis() {
         'espirrar.\n\n' +
         'Tratamento: Diagnóstico tempestivo e ministração de medicamentos para combater o parasita.\n\n' +
         'Números atuais: 10.6 MM de pessoas adoeceram por tuberculose em 2022.',
-        image: 'img/tuberculose_1.png', // caminho da imagem
+        image: 'img/tuberculose_1.jpg', // caminho da imagem
         icon: 'img/tuberculose.png', // caminho do ícone
       },
       {
@@ -41,7 +41,7 @@ function CombateADoencasTransmissiveis() {
         'Como prevenir: controle da população de mosquitos, uso de repelentes, desde 2021 a organização\n\n'+
         'mundial de saúde recomenda o uso da vacina RTS,S;\n\n' +
         'Números Atuais: 247MM casos de malária em 2021.',
-        image: 'img/doencatropical_1.png', // caminho da imagem
+        image: 'img/doencatropical_1.jpg', // caminho da imagem
         icon: 'img/doencatropical.png', // caminho do ícone
       },
       {
@@ -49,7 +49,7 @@ function CombateADoencasTransmissiveis() {
         text: 'O que causa: contaminação com diversos tipos de microorganismos prejudiciais a saúde.\n\n' +
         'Como é transmitido: consumo de água proveniente de fontes contaminadas pela poluição.\n\n' +
         'Números: 1.7 bilhões de pessoas consomem água de fontes contaminadas com fezes.',
-        image: 'img/agua_1.png', // caminho da imagem
+        image: 'img/agua_1.jpg', // caminho da imagem
         icon: 'img/agua.png', // caminho do ícone
       },
     ];
